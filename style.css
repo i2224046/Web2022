@@ -1,0 +1,43 @@
+/*サイトの基盤*/
+#base{
+  width: auto;
+  /*height: 50px;/*高さを固定*/
+}
+/*P文字*/
+p{
+  color: #b7a2ee;
+}
+/*click"+"*/
+#left{
+ width: 575px;
+ float: left;/*左端に合わせる*/
+ height: 500px;
+ font-family: 'Zen Kaku Gothic New', sans-serif;
+}
+/*サイト末尾*/
+footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background: #1e0955;
+}
+
+#copy{
+  font-size:75%;
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+  color: #e2daf8;
+}
+#copy a{
+  font-size:65%;
+  text-decoration: none;
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+  color: #e2daf8;
+}
+#copy a:hover{
+  font-size:65%;
+  background: #e2daf8;
+  color: #1e0955;
+  transition: all 0.25s ease;
+}

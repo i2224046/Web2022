@@ -1,0 +1,66 @@
+/*リンクの形状*/
+#next a{
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	background:#1e0955;
+	border-radius: 5px;
+	width: 150px;
+	height: 50px;
+	color: #e2daf8;
+	text-align: center;
+	text-transform: uppercase; 
+	text-decoration: none;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+	font-size:175%;
+	transition:all 0.3s;
+}
+
+#next a:hover{
+	background: #e2daf8;
+	color: #1e0955;
+}
+
+/*リンクを右下に固定*/
+#next {
+	position: fixed;
+	right: 10px;
+	bottom:10px;
+	z-index: 2;
+    /*はじめは非表示*/
+	opacity: 0;
+	transform: translateX(200px);
+}
+
+/*　左の動き　*/
+
+#next.LeftMove{
+	animation: LeftAnime 0.5s forwards;
+}
+
+@keyframes LeftAnime{
+  from {
+    opacity: 0;
+	transform: translateX(200px);
+  }
+  to {
+    opacity: 1;
+	transform: translateX(0);
+  }
+}
+
+/*　右の動き　*/
+
+#next.RightMove{
+	animation: RightAnime 0.5s forwards;
+}
+@keyframes RightAnime{
+  from {
+  	opacity: 1;
+	transform: translateX(0);
+  }
+  to {
+  	opacity: 1;
+	transform: translateX(200px);
+  }
+}

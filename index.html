@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<!--
+    css/jsについて...indexは一部独立したシートを使っています。
+
+    load.css/js = indexロード画面シート
+    mov.css = index専用背景動画再生シート
+    menu.css boxSet.css/js = index専用メニュー
+    style.css = index専用スタイルシート
+    
+    hoge.css/js = index以外の汎用式フェード
+    menu2.css = index以外の汎用式メニュー
+    back.css/js = index以外の汎用背景
+    goTop.js = index以外のページ最上部へ戻すボタン
+    goNext.css/js = index以外の次ページに進むボタン
+    newsGalley.css/js = news.htmlの画像制御
+
+    .htaccess = 404エラー時に404.htmlへリダイレクトする為の記述
+-->
+<!--
+    サイトの構成について
+
+    index.html = トップページ
+    |
+    ― what.html = このサイトについて
+    ― make.html = 筆者の作った動画一覧
+    ― news.html = お知らせ一覧
+    ― made.html = 筆者の情報
+
+    img = 画像用フォルダー
+    mov = 動画用フォルダー
+-->
+
+<head>
+    <!-- 文字コード指定 -->
+    <meta charset="UTF-8">
+    <!-- 日本語指定 -->
+    <meta http-equiv="content-langage" content="ja">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <!--CSS-->
+    <!--ロード画面-->
+    <link rel="stylesheet" href="load.css">
+    <!--背景動画-->
+    <link rel="stylesheet" href="mov.css">
+    <!--ボックスメニュー基盤-->
+    <link rel="stylesheet" href="boxSet.css">
+    <!--ボックスメニュー文字-->
+    <link rel="stylesheet" href="menu.css">
+    <!--その他のスタイル-->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- タイトルはheadの中に -->
+    <title>実写ソフトウェアトーク劇場</title>
+
+    <!--タイトルのアイコン-->
+    <link rel="shortcut icon" href="img/title.ico">
+
+    <!--フォント-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap" rel="stylesheet">
+</head>
+
+<body bgcolor="#e2daf8">
+    <div id="base">
+        <div id="splash">
+            <div id="splash_text"></div>
+        </div>
+
+        <main>
+            <!--<div id="title">
+            <h1>タイトル</h1>-->
+
+            <!--サイトの内容-->
+            <div id="head">
+                <h1 class="logo"><img src="img/logo.webp"></h1>
+                <div id="left">
+                    <h3>　click"+"</h3>
+                </div>
+            </div>
+            <div id="idBox">
+                <!--ここからメニュー-->
+                <ul class="accordion-area">
+                    <section>
+                        <li></li>
+                        <h3 class="title"></h3>
+                        <div class="box">
+                            <div id="menu">
+                                <li class="menu01"><a href="what.html">これ is 何</a></li>
+                                <li class="menu01"><a href="make.html">作品一覧</a></li>
+                                <li class="menu01"><a href="news.html">お知らせ</a></li>
+                                <li class="menu01"><a href="made.html">制作者の情報</a></li>
+                            </div>
+                        </div>
+                    </section>
+                </ul>
+                <!--ここまでメニュー-->
+            </div>
+        </main>
+
+        <!--背景動画読み込み-->
+        <div id="video-area">
+            <video id="video" poster="img/logo.png" webkit-playsinline playsinline muted autoplay loop>
+                <!--
+      poster：動画ファイルが利用できない環境で代替表示される画像
+      webkit-playsinline：iOS 9までのSafari用インライン再生指定
+      playsinline：iOS 10以降のSafari用インライン再生指定
+      muted：音声をミュートさせる
+      autoplay：動画を自動再生させる
+      loop：動画をループさせる
+      controls：コントロールバーを表示する
+  -->
+                <source src="mov/indexBack.mp4">
+                <p>再生エラー</p>
+            </video>
+        </div>
+        <footer>
+            <p id="copy">Copyright © i2224046 All rights reserved.<br>
+            このサイトはPC版Firefoxでの表示を推奨しています。　<a href="https://www.mozilla.org/ja/firefox/new" target="_blank"
+            rel="noopener noreferrer">Mozillaから高速、プライベート、無料の  Firefox ブラウザーを今すぐダウンロード</a></p>
+        </footer>
+    </div>
+</body>
+<!--==============JQuery読み込み===============-->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
+<!--メニュー-->
+<script src="load.js"></script>
+<script src="boxSet.js"></script>
+</html>

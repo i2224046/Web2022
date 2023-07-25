@@ -1,0 +1,50 @@
+@charset "utf-8";
+/*
+h1.logo{
+}
+*/
+
+/*読み込み中画面*/
+#splash {
+  /*fixedで全面に固定*/
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background:#1e0955;
+  text-align:center;
+  color:#fff;
+}
+
+/*読み込み進捗バー*/
+#splash_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 999;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+
+/*========= レイアウトのためのCSS ===============*/
+
+#container{
+    width:0%;
+    height: 100vh;
+    background: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+a{
+    color: #333;
+}
+
+a:hover{
+     text-decoration: none;   
+}

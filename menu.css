@@ -1,0 +1,30 @@
+/*メニュー画面の基盤*/
+#idBox{
+  color: #e2daf8;/*文字色変更*/
+  /*width: 800px;/*幅を固定*/
+  /*height: 100px;/*高さを固定*/
+  /*background: #1e0955;/*背景色変更*/
+  text-align: center;/*中心揃え*/
+}
+
+/*メニュー文字*/
+#menu li{
+  margin:-0px;/*上の空白*/
+  font-family: 'Zen Kurenaido', sans-serif;
+}
+/*メニューのliのaについて*/
+#menu li.menu01 a{
+  color: #e2daf8;/*文字色変更*/
+  font-size:300%;
+  text-decoration: none;/*ハイパーリンクライン削除*/
+  /*width:700px;
+  height: 50px;
+  /*background: url(img/home.jpg);*/
+  /*display: block;/*背景色を全体に*/
+}
+/*メニューのliのaにマウスが来たら*/
+#menu li.menu01 a:hover{
+  background: #e2daf8;
+  color: #1e0955;
+  transition: all 0.5s ease;/*フェード*/
+}

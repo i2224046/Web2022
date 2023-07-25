@@ -1,0 +1,243 @@
+/*ヘッダー*/
+#head{
+   font-size:150%;
+   margin: 0%;
+   color: #1e0955;
+   text-align: center;
+   font-family: 'Zen Kaku Gothic New', sans-serif;
+}
+
+/*メイン基礎部分*/
+#body{
+   width: auto;
+   color: #1e0955;
+}
+
+/*メイン部分*/
+#box{
+   width: 800px;
+}
+/*メイン部分｜動画背景時*/
+#boxVideo{
+   position: relative;
+   left: -10px;
+   right: -10px;
+}
+#boxVideo video{
+   -ms-filter: blur(3px);
+   filter: blur(3px);
+}
+#Video404 {
+   position: relative;
+   left: -10px;
+   right: -10px;
+}
+#boxVideo p{
+   color: #e2daf8;
+   background-color: rgba(30,9,85,0.5);
+   width: 800px;
+   position: absolute;
+   /*中央寄せ*/
+   top: 0;
+   left: 50%;
+   transform: translateX(-50%);
+   -webkit-transform: translateX(-50%);
+   -ms-transform: translateX(-50%);
+}
+
+/*画像定義*/
+#img{
+   text-align: center;
+   margin: 25px 25px;
+}
+/*whatの画像専用定義*/
+p.whatImg img {
+   border-radius: 30px;
+}
+p.whatImg img:hover{
+  transform:scale(1.1,1.1);
+  transition: all 0.5s ease;
+}
+p.whatImg2 img {
+   border-radius: 30px;
+   object-fit: cover; 
+}
+p.whatImg2 img:hover{
+  transform:scale(1.1,1.1);
+  transition: all 0.5s ease;
+}
+/*newsの画像専用定義*/
+p.newsImg img {
+   border-radius: 15px;
+}
+p.newsImg img:hover{
+  transform:scale(1.2,1.2);
+  transition: all 0.5s ease;
+}
+/*madeの画像専用定義*/
+p.madeImg img {
+   border-radius: 15px;
+}
+/*タイトル文字｜通常*/
+p.title{
+   font-size:150%;
+   color: #1e0955;
+   margin: 75px 0px 0px 0px;
+   border-bottom:3px dotted #1e0955;
+   /*border-left:5px solid #1e0955;/*縦棒*/
+   width: 650px;
+}
+/*本文文字｜通常（左寄せ）*/
+p.text{
+   font-family: 'Zen Kaku Gothic New', sans-serif;
+   color: #1e0955;
+   margin: 20px;
+   text-align: left;
+}
+p.text a{
+   color: #1e0955;
+   text-decoration: none;
+}
+p.text a:hover{
+   background: #1e0955;
+   color: #e2daf8;
+   transition: all 0.25s ease;
+}
+/*本文文字｜小（左寄せ）*/
+p.textMini{
+   font-size:75%;
+   font-family: 'Zen Kaku Gothic New', sans-serif;
+   color: #1e0955;
+   margin: 20px;
+   text-align: left;
+}
+p.textMini a{
+   color: #1e0955;
+   text-decoration: none;
+}
+p.textMini a:hover{
+   background: #1e0955;
+   color: #e2daf8;
+   transition: all 0.25s ease;
+}
+/*本文文字｜中揃え*/
+p.textCenter{
+   font-size:100%;
+   color: #1e0955;
+   font-family: 'Zen Kaku Gothic New', sans-serif;
+   text-decoration: none;
+}
+p.textCenter a{
+   color: #1e0955;
+   text-decoration: none;
+}
+p.textCenter a:hover{
+   background: #1e0955;
+   color: #e2daf8;
+   transition: all 0.25s ease;
+}
+/*作品一覧動画用*/
+/*
+p.makeMov{
+}
+*/
+p.makeMov:hover{
+   transform:scale(1.05,1.05);
+   transition: all 0.25s ease;
+}
+/*タイトル文字｜作品一覧用*/
+p.makeTitle{
+   font-size:200%;
+   width: 720px;
+   font-family: 'Zen Kaku Gothic New', sans-serif;
+   color: #1e0955;
+   margin: 20px 20px 20px;
+   text-align: left;
+}
+p.makeTitle a{
+   color: #1e0955;
+   text-decoration: none;
+}
+p.makeTitle a:hover{
+   background: #1e0955;
+   color: #e2daf8;
+   transition: all 0.25s ease;
+}
+/*整列｜作品一覧用*/
+td{
+   vertical-align:top;    
+}
+/*本文文字｜作品一覧用*/
+p.makeText{
+   font-size:100%;
+   width: 720px;
+   font-family: 'Zen Kaku Gothic New', sans-serif;
+   color: #1e0955;
+   margin: 20px 20px 20px;
+   text-align: left;
+}
+/*隠し要素*/
+.button span {
+	position: absolute;
+	width: 75px;
+	height: 25px;
+	text-align: center;
+}
+.button span:nth-child(1) {
+	background-color: #1e0955;
+	color: #e2daf8;
+}
+.button span:nth-child(2) {
+	background-color: #e2daf8;
+	color: #1e0955;
+}
+.button:hover span:nth-child(2) {
+	display: none;
+}
+
+/*プロフィール用*/
+ul li{
+   list-style-type: circle;/*黒丸を消す*/
+   padding: 0px;
+   text-align: left;
+   font-family: 'Zen Kaku Gothic New', sans-serif;
+   color: #1e0955;
+   margin:0px 0px 20px 0px;
+}
+ul li a{
+   color: #1e0955;
+   text-decoration: none;
+}
+ul li a:hover{
+   background: #1e0955;
+   color: #e2daf8;
+   transition: all 0.25s ease;
+}
+/*フッダー*/
+footer{
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   text-align: center;
+   background: #1e0955;
+   color: #e2daf8;
+}
+/*ページ最上部へ戻るボタン*/
+#page-top a{
+   font-size:100%;
+   color: #e2daf8;
+   font-family: 'Zen Kaku Gothic New', sans-serif;
+   text-decoration: none;
+}
+#page-top a:hover{
+  background: #e2daf8;
+  color: #1e0955;
+  transition: all 0.25s ease;
+}
+/*コピーライト*/
+#copy{
+   font-size:75%;
+   font-family: 'Zen Kaku Gothic New', sans-serif;
+   color: #e2daf8;
+}
